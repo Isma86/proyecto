@@ -1,0 +1,23 @@
+{
+  "name": "proyecto",
+  "version": "0.0.0",
+  "description": "proyecto final del curso",
+  "main": "funciones.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "engines": {
+		"node": "0.8.14",
+		"npm": "1.1.65"
+  },
+  "keywords": [
+    "proyecto",
+    "heroku"
+  ],
+  "author": "Ismael Lara",
+  "license": "BSD-2-Clause"
+}
