@@ -1,0 +1,84 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+	<script src="http://code.jquery.com/jquery-1.7.2.js"></script>
+	<script type="text/javascript" src="funciones.js"></script>
+    <title>Proyecto Final</title>
+	
+  </head>
+  <body>
+	
+	<center>
+		<h2>AGENDA DE TELEFONOS</h2>
+	</center>
+	
+	<div id="guardar_datos" style="height: 600px; width: 60%; float: left;">
+		
+		<center>
+			<h4>Vamos a guardar todos los datos referentes a los contactos que van a aparecer en nuestra agenda</h4>
+		</center>
+		
+		<span style="margin-right: 33px; margin-bottom: 10px;">Nombre del contacto:</span>
+		<input type="text" name="nombre" id="coger_nombre" style="margin-bottom: 10px;"/>
+		<div style="clear: both; width: 600px; height: 5px;"></div>
+		<span style="margin-right: 32px; margin-bottom: 10px;">Apellido del contacto:</span>
+		<input type="text" name="apellido" id="coger_apellido" style="margin-bottom: 10px;"/>
+		<div style="clear: both; width: 600px; height: 5px;"></div>
+		<span style="margin-right: 108px; margin-bottom: 10px;">Teléfono:</span>
+		<input type="text" name="telefono" id="coger_telefono" style="margin-bottom: 10px;" />
+		
+		<div style="clear: both; width: 600px; height: 40px;"></div>
+		<input type="button" id="envio_datos" value="Añadir Contacto" style="">
+		<div style="clear: both; width: 600px; height: 5px;"></div>
+		<input type="button" id="confirmo_datos" value="Confirmar" style="display:none;">
+		
+		<div style="clear: both; width: 600px; height: 40px;"></div>
+		
+		<center>
+			<h4>Vamos a buscar el nombre de un contacto para mostrar sus datos</h4>
+		</center>
+		
+		<span style="margin-right: 33px; margin-bottom: 10px;">Nombre del contacto:</span>
+		<input type="text" name="nombre" id="buscar_nombre" style="margin-bottom: 10px;"/>
+		<div style="clear: both; width: 600px; height: 40px;"></div>
+		<input type="button" id="buscar_datos" value="Buscar Contacto" style="">
+		
+		<div style="clear: both; width: 600px; height: 70px;"></div>	
+		<center>		
+			<h4>Vamos a ver todos los contactos que tenemos en nuestra agenda</h4>
+		</center>
+		
+		<input type="button" id="mostrar_agenda" value="Ver todos los contactos" style="">
+		
+		<div style="clear: both; width: 600px; height: 70px;"></div>	
+		<center>		
+			<h4>Vamos a eliminar un contacto de nuestra agenda</h4>
+		</center>
+		
+		<span style="margin-right: 33px; margin-bottom: 10px;">Nombre del contacto:</span>
+		<input type="text" name="nombre" id="eliminar_nombre" style="margin-bottom: 10px;" style="margin-right: 50px;"/>
+		<input type="text" name="no_contacto_eliminar" id="no_contacto_eliminar" style="border:none; width: 400px; margin-left: 60px;"/>
+		<div style="clear: both; width: 600px; height: 40px;"></div>
+		<input type="button" id="eliminar_contacto" value="Eliminar Contacto" style="">
+		
+		
+	</div>
+	
+	
+	
+	<div id="mostrar_datos" style="height: 250px; width: 400px; float:left; margin-top: 285px;">
+		
+		<h2>Datos del contacto</h2>
+		<span id="datos_nom">Nombre => </span><input type="text" name="nombre" id="muestra_nombre" style="border:none;"/>
+		<div style="clear: both; width: 600px; height: 5px;"></div>
+		<span id="datos_ap">Apellido => </span><input type="text" name="apellido" id="muestra_apellido" style="border:none;"/>
+		<div style="clear: both; width: 600px; height: 5px;"></div>
+		<span id="datos_tel">Telefono => </span><input type="text" name="telefono" id="muestra_telefono" style="border:none;"/>
+		<div style="clear: both; width: 600px; height: 5px;"></div>
+		<input type="text" name="no_contacto_buscar" id="no_contacto_buscar" style="border:none; width: 400px;"/>
+		
+	</div>
+	
+  </body>
+</html>
